@@ -12,6 +12,9 @@ License: undecided
 class yeah_functions {
 	function __construct() {
 		add_action('admin_menu', array(&$this, 'admin_menu'));
+		require_once('yf---debug.php');
+		require_once('yf---time.php');
+		require_once('yf---wordpress.php');
 	}
 	function admin_menu() {
 		add_options_page('Documentation',
