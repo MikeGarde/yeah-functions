@@ -10,6 +10,7 @@
  *
  * @return string  $string  A view of an array but formatted for easy reading via HTML.
  */
+if(!function_exists('print_a')) {
 function print_a($array=false, $die=true, $return=false) {
 
 	if(!$return)
@@ -80,6 +81,7 @@ function print_a($array=false, $die=true, $return=false) {
 	}
 
 }
+}
 
 
 /**
@@ -94,4 +96,3 @@ function addslashes_2_regex($matches){
 	//return ' => \''.$matches[1]."'\n";
 	return ' =&gt; \''.addslashes($matches[1])."'\n".$matches[2];
 }
-

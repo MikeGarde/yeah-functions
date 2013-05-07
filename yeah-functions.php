@@ -24,7 +24,7 @@ class yeah_functions {
 						array($this, 'docs_page'));
 	}
 	function docs_page() {
-		require_once('view/settings.php');
+		require_once('views/documentation.php');
 	}
 }
 new yeah_functions;
